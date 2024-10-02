@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import { usePageContext } from './context/PageContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BackToTopButton from './components/BackToTopButton';
 
 export default function Home() {
 	const { currentSection, setCurrentSection } = usePageContext();
@@ -74,6 +75,7 @@ export default function Home() {
 				className='h-screen'>
 				<HireMe />
 			</section>
+			<BackToTopButton />
 		</main>
 	);
 }
