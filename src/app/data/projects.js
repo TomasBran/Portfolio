@@ -16,7 +16,7 @@ export const projects = [
 		project_description:
 			'Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon.',
 		disclaimer:
-			'This project is not affiliated with Nintendo. All rights to Pokémon belong to their respective owners. This is a non-profit project.',
+			'This project is not affiliated with Nintendo. All rights to Pokémon belong to their respective owners. This is a non-profit project. The live demo might not be up to date.',
 	},
 	{
 		project_name: 'Notes App',
