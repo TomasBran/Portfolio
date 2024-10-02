@@ -41,7 +41,7 @@ _This is a note management app that allows you to create, delete, and edit notes
 - Assign categories and tags to notes
 - Organize notes by categories and tags
 
-Repository](https//github.com/TomasBran/Notes-Management-App)
+[Repository](https//github.com/TomasBran/Notes-Management-App)
 
 ---
 
