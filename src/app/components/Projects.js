@@ -3,9 +3,12 @@ import { useThemeContext } from '../context/ThemeContext';
 import { projects } from '../data/projects';
 import Image from 'next/image';
 import '../styles/projects.css';
+import { usePageContext } from '../context/PageContext';
 
 const Projects = () => {
 	const { theme } = useThemeContext();
+
+	const { currentSection } = usePageContext();
 
 	const [currentProject, setCurrentProject] = useState(projects[0]);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -32,13 +35,15 @@ const Projects = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCurrentImageIndex((prevIndex) => {
-				if (prevIndex < currentProject.images.length - 1) {
-					return prevIndex + 1;
-				} else {
-					return 0;
-				}
-			});
+			if (currentSection === 'projects') {
+				setCurrentImageIndex((prevIndex) => {
+					if (prevIndex < currentProject.images.length - 1) {
+						return prevIndex + 1;
+					} else {
+						return 0;
+					}
+				});
+			}
 		}, 4000);
 
 		return () => {
