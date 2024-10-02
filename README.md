@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tomas Bran - Portfolio
 
-## Getting Started
+Welcome to my portfolio! Here you'll find a collection of projects that demonstrate my skills and experiences in web development, programming, and design. Feel free to explore and check out the repositories linked below.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. [About Me](#about-me)
+2. [Projects](#projects)
+3. [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Hi! I'm Tomas Bran, a passionate developer with a focus on frontend design. I love solving complex problems and bringing ideas to life through code. This portfolio showcases a variety of projects I've worked on, ranging from games to daily life applications. I'm always looking for new challenges and opportunities to grow my skills and knowledge.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Projects
 
-## Learn More
+### 1. Pokemon Portal
 
-To learn more about Next.js, take a look at the following resources:
+**Description**:  
+_Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon._
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Key Features**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Several different and fun games
+- Useful tools for Pokémon trainers
+- Login and registration (Coming soon)
 
-## Deploy on Vercel
+[Live Demo](#https://portal-pkmn.vercel.app/) | [Repository](#https://github.com/TomasBran/Portal-Pokemon-NextJS)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 2. [Notes Management App]
+
+**Description**:  
+_This is a note management app that allows you to create, delete, and edit notes while assigning categories and tags to them. It’s a versatile tool for organizing your notes effectively._
+
+**Key Features**:
+
+- Create, edit, and delete notes
+- Assign categories and tags to notes
+- Organize notes by categories and tags
+
+[Repository](#https://github.com/TomasBran/Notes-Management-App)
+
+---
+
+### 3. [Ticket Bus]
+
+**Description**:  
+_This app is a ticket-buying platform that allows you to select your desired seats and purchase them in real time._
+
+**Key Features**:
+
+- Seat selection
+- Purchase seats
+- Real-time updates
+
+[Repository](#https://github.com/TomasBran/Ticket-Bus)
+
+---
+
+### 4. [Airbnb Clone]
+
+**Description**:  
+_This project is intended to be an Airbnb clone, replicating key features and functionalities, including property listings, user bookings, and reviews, to provide a similar user experience._
+
+**Key Features**:
+
+- Property listings based on the backend
+- Booking, coordination with the host
+- User review
+
+[Repository](#https://github.com/TomasBran/Airbnb-Clone)
+
+---
+
+### 5. [Grupo Palet]
+
+**Description**:  
+_This project was developed for a pallet factory located in Argentina, showcasing both pallets and services for sale._
+
+**Key Features**:
+
+- Pallets and services for sale
+- Real-time updates
+
+[Repository](#https://github.com/TomasBran/Grupo-Palet)
+
+---
+
+## Contact
+
+If you have any questions or would like to collaborate, feel free to reach out:
+
+- Email: tomasaugusto.bran@hotmail.com
+- LinkedIn: https://www.linkedin.com/in/tomas-augusto-bran-70745616a/
+- GitHub: https://github.com/TomasBran
+
+Thanks for visiting my portfolio!
