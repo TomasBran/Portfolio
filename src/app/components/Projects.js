@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useThemeContext } from '../context/ThemeContext';
 import { projects } from '../data/projects';
 import Image from 'next/image';
@@ -29,6 +29,22 @@ const Projects = () => {
 			setCurrentImageIndex((prevIndex) => prevIndex - 1);
 		}
 	};
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrentImageIndex((prevIndex) => {
+				if (prevIndex < currentProject.images.length - 1) {
+					return prevIndex + 1;
+				} else {
+					return 0;
+				}
+			});
+		}, 4000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	}, [currentProject.images.length]);
 
 	return (
 		<div
@@ -75,7 +91,7 @@ const Projects = () => {
 
 							<div className='lg:h-[60vh] lg:w-11/12 w-full overflow-hidden rounded-2xl relative'>
 								<div
-									className={`flex transition-transform duration-300 `}
+									className={`flex transition-transform duration-300`}
 									style={{
 										transform: `translateX(-${currentImageIndex * 100}%)`,
 									}}>
@@ -84,7 +100,11 @@ const Projects = () => {
 											key={index}
 											src={image}
 											alt={currentProject.project_name}
-											className='object-contain'
+											className={`object-contain transition-opacity duration-500 ${
+												index === currentImageIndex
+													? 'opacity-100'
+													: 'opacity-0'
+											}`}
 										/>
 									))}
 								</div>
