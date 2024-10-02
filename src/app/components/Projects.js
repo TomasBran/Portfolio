@@ -35,15 +35,13 @@ const Projects = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			if (currentSection === 'projects') {
-				setCurrentImageIndex((prevIndex) => {
-					if (prevIndex < currentProject.images.length - 1) {
-						return prevIndex + 1;
-					} else {
-						return 0;
-					}
-				});
-			}
+			setCurrentImageIndex((prevIndex) => {
+				if (prevIndex < currentProject.images.length - 1) {
+					return prevIndex + 1;
+				} else {
+					return 0;
+				}
+			});
 		}, 4000);
 
 		return () => {
