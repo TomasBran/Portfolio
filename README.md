@@ -17,6 +17,8 @@ Hi! I'm Tomas Bran, a passionate developer with a focus on frontend design. I lo
 
 ### 1. Pokemon Portal
 
+✨Featured Project✨
+
 **Description**:  
 _Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon._
 
