@@ -7,7 +7,7 @@ Welcome to my portfolio! Here you'll find a collection of projects that demonstr
 1. [About Me](#about-me)
 2. [Projects](#projects)
 3. [Contact](#contact)
-4. [Portfolio Link](#https://tomas-bran-portfolio.vercel.app/)
+4. [Portfolio Link](https://tomas-bran-portfolio.vercel.app/)
 
 ## About Me
 
@@ -26,7 +26,7 @@ _Pokémon Portal is an engaging platform where you can discover exciting games a
 - Useful tools for Pokémon trainers
 - Login and registration (Coming soon)
 
-[Live Demo](#https://portal-pkmn.vercel.app/) | [Repository](#https://github.com/TomasBran/Portal-Pokemon-NextJS)
+[Live Demo](https://portal-pkmn.vercel.app/) | [Repository](https://github.com/TomasBran/Portal-Pokemon-NextJS)
 
 ---
 
@@ -41,7 +41,7 @@ _This is a note management app that allows you to create, delete, and edit notes
 - Assign categories and tags to notes
 - Organize notes by categories and tags
 
-Repository](#https//github.com/TomasBran/Notes-Management-App)
+Repository](https//github.com/TomasBran/Notes-Management-App)
 
 ---
 
@@ -56,7 +56,7 @@ _This app is a ticket-buying platform that allows you to select your desired sea
 - Purchase seats
 - Real-time updates
 
-[Repository](#https://github.com/TomasBran/Ticket-Bus)
+[Repository](https://github.com/TomasBran/Ticket-Bus)
 
 ---
 
@@ -71,7 +71,7 @@ _This project is intended to be an Airbnb clone, replicating key features and fu
 - Booking, coordination with the host
 - User review
 
-[Repository](#https://github.com/TomasBran/Airbnb-Clone)
+[Repository](https://github.com/TomasBran/Airbnb-Clone)
 
 ---
 
@@ -85,7 +85,7 @@ _This project was developed for a pallet factory located in Argentina, showcasin
 - Pallets and services for sale
 - Real-time updates
 
-[Repository](#https://github.com/TomasBran/Grupo-Palet)
+[Repository](https://github.com/TomasBran/Grupo-Palet)
 
 ---
 
