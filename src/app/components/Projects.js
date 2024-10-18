@@ -8,8 +8,6 @@ import { usePageContext } from '../context/PageContext';
 const Projects = () => {
 	const { theme } = useThemeContext();
 
-	const { currentSection } = usePageContext();
-
 	const [currentProject, setCurrentProject] = useState(projects[0]);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -131,14 +129,30 @@ const Projects = () => {
 						<span>Error downloading images</span>
 					)}
 				</div>
-				<div className='lg:w-4/12 flex items-center flex-col lg:gap-16'>
-					<div className='flex lg:flex-col lg:gap-0 gap-2 items-center'>
-						<span className='lg:text-4xl font-bold text-xl'>
-							{currentProject.project_name}
-						</span>
-						{currentProject.project_name === 'Pokemon Portal' && (
-							<span className='text-sm italic'>✨Featured Project✨</span>
-						)}
+				<div className='lg:w-4/12 flex items-center flex-col lg:gap-8'>
+					<div className='flex lg:flex-col flex-col sm:flex-row lg:gap-0 gap-2 items-center'>
+						<div className='flex flex-col items-center'>
+							<span className='lg:text-4xl font-bold text-xl'>
+								{currentProject.project_name}
+							</span>
+							{currentProject.project_name === 'Pokemon Portal' && (
+								<span className='text-sm italic'>✨Featured Project✨</span>
+							)}
+						</div>
+						<div className='flex flex-wrap lg:gap-x-6 gap-x-2 lg:gap-y-4 gap-y-1 sm:gap-y-0 items-center justify-center lg:py-4 py-1 '>
+							{currentProject.stack.map((stack, index) => (
+								<span
+									key={index}
+									className={`text-sm py-1 px-3 rounded-xl
+									${
+										theme === 'dark'
+											? 'bg-white/90 text-slate-800'
+											: 'bg-slate-800/90 text-white'
+									}`}>
+									{stack}
+								</span>
+							))}
+						</div>
 					</div>
 					<div className='flex flex-col items-center text-center lg:gap-8 px-6 '>
 						<span className='text-lg'>

@@ -54,7 +54,7 @@ const Homepage = () => {
 						className={`${
 							theme === 'dark' ? 'text-white' : 'text-slate-800'
 						} lg:w-full xl:px-24 lg:px-12 transition duration-500 ease-linear`}>
-						<span>Frontend </span>
+						<span>Fullstack </span>
 						<span className={`underline-animation duration-150 ease-linear`}>
 							Developer
 						</span>

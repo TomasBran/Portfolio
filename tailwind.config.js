@@ -21,6 +21,10 @@ module.exports = {
 					react: '#61DAFB',
 					tailwind: '#38B2AC',
 					next: '#000000',
+					node: '#339933',
+					nest: '#E0234E',
+					express: '#000000',
+					mongodb: '#47A248',
 				},
 
 				dark: {
@@ -31,6 +35,10 @@ module.exports = {
 					react: '#2D9CDB',
 					tailwind: '#2C7A7B',
 					next: '#F4F4F4',
+					node: '#215732',
+					nest: '#A61B3E',
+					express: '#F4F4F4',
+					mongodb: '#3D6E40',
 				},
 				custom: {
 					lightBg: '#f7fafc',

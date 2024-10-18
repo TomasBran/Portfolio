@@ -17,6 +17,7 @@ export const projects = [
 			'Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon.',
 		disclaimer:
 			'This project is not affiliated with Nintendo. All rights to Pokémon belong to their respective owners. This is a non-profit project. The live demo might not be up to date.',
+		stack: ['HTML', 'CSS', 'Javascript', 'React', 'TailwindCSS', 'Next.js'],
 	},
 	{
 		project_name: 'Notes App',
@@ -27,6 +28,16 @@ export const projects = [
 		project_description:
 			'This is a note management app that allows you to create, delete, and edit notes while assigning categories and tags to them. It’s a versatile tool for organizing your notes effectively.',
 		disclaimer: '',
+		stack: [
+			'HTML',
+			'CSS',
+			'Javascript',
+			'React',
+			'TailwindCSS',
+			'Next.js',
+			'Node.js',
+			'Nest.js',
+		],
 	},
 	{
 		project_name: 'Ticket Bus',
@@ -38,6 +49,7 @@ export const projects = [
 			'This app is a ticket-buying platform that allows you to select your desired seats and purchase them in real time.',
 		disclaimer:
 			'This is a collaborative project with a non-profit organization.',
+		stack: ['HTML', 'CSS', 'Javascript', 'React', 'TailwindCSS', 'Node.js'],
 	},
 	{
 		project_name: 'Airbnb Clone',
@@ -49,6 +61,15 @@ export const projects = [
 			'This project is intended to be an Airbnb clone, replicating key features and functionalities, including property listings, user bookings, and reviews, to provide a similar user experience.',
 		disclaimer:
 			'This is a collaborative project with a non-profit organization.',
+		stack: [
+			'HTML',
+			'CSS',
+			'Javascript',
+			'React',
+			'TailwindCSS',
+			'Java',
+			'MySQL',
+		],
 	},
 	{
 		project_name: 'Grupo Palet',
@@ -59,5 +80,6 @@ export const projects = [
 		project_description:
 			'This project was developed for a pallet factory located in Argentina, showcasing both pallets and services for sale.',
 		disclaimer: '',
+		stack: ['HTML', 'CSS', 'Javascript'],
 	},
 ];
