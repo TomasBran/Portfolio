@@ -22,9 +22,16 @@ const detectLocale = () => {
 export const LocaleProvider = ({ children }) => {
   const [locale, setLocale] = useState(() => detectLocale());
 
-  const t = (key) => {
+  const t = (key, vars = {}) => {
     const keys = key.split(".");
-    return keys.reduce((acc, k) => acc?.[k], messages[locale]);
+
+    let text = keys.reduce((acc, k) => acc?.[k], messages[locale]);
+
+    if (!text) return "";
+
+    return text.replace(/\{\{(\w+)\}\}/g, (_, k) => {
+      return vars[k] ?? `{{${k}}}`;
+    });
   };
 
   useEffect(() => {

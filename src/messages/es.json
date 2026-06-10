@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "section_1": "¡Hola! Tengo {age} años y vivo en Milán, Italia. Soy apasionado por la programación, los juegos y Pokémon.",
+    "section_1": "¡Hola! Tengo {{age}} años y vivo en Milán, Italia. Soy apasionado por la programación, los juegos y Pokémon.",
     "section_2": "Empecé a programar a los 17 años solo por diversión, pero en 2022 comencé a profundizar y estudiarlo más seriamente.",
     "section_3": "Ahora continúo perfeccionando mis habilidades y afrontando nuevos desafíos. Mi camino en la programación es una aventura en constante evolución, y estoy dedicado a crecer tanto personal como profesionalmente mientras exploro las infinitas posibilidades del mundo tecnológico.",
     "section_4": "'No hay problema que no pueda resolver', ese es mi lema, y lo mantengo. Puede que falle en el camino, pero eventualmente encontraré la solución. Eso es lo que me convierte en un verdadero maestro.",

@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Chi sono",
-    "section_1": "Ciao! Ho {age} anni e vivo a Milano. Sono appassionato di programmazione, videogiochi e Pokémon.",
+    "section_1": "Ciao! Ho {{age}} anni e vivo a Milano. Sono appassionato di programmazione, videogiochi e Pokémon.",
     "section_2": "Ho iniziato a programmare a 17 anni solo per divertimento, ma nel 2022 ho iniziato ad approfondire e studiarla più seriamente.",
     "section_3": "Ora continuo a perfezionare le mie competenze e ad affrontare nuove sfide con entusiasmo. Il mio percorso nella programmazione è un'avventura in continua evoluzione, e sono impegnato a crescere sia personalmente che professionalmente mentre esploro le infinite possibilità del mondo tecnologico.",
     "section_4": "'Non esiste puzzle che non possa risolvere', questo è il mio motto. Posso fallire alcune volte, ma alla fine troverò la soluzione. È questo che mi rende un vero maestro.",
