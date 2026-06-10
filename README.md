@@ -15,24 +15,7 @@ Hi! I'm Tomas Bran, a passionate developer with a focus on frontend design. I lo
 
 ## Projects
 
-### 1. Pokemon Portal
-
-✨Featured Project✨
-
-**Description**:  
-_Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon._
-
-**Key Features**:
-
-- Several different and fun games
-- Useful tools for Pokémon trainers
-- Login and registration (Coming soon)
-
-[Live Demo](https://portal-pkmn.vercel.app/) | [Repository](https://github.com/TomasBran/Portal-Pokemon-NextJS)
-
----
-
-### 2. Notes Management App
+### 1. Notes Management App
 
 **Description**:  
 _This is a note management app that allows you to create, delete, and edit notes while assigning categories and tags to them. It’s a versatile tool for organizing your notes effectively._
@@ -47,7 +30,7 @@ _This is a note management app that allows you to create, delete, and edit notes
 
 ---
 
-### 3. Ticket Bus
+### 2. Ticket Bus
 
 **Description**:  
 _This app is a ticket-buying platform that allows you to select your desired seats and purchase them in real time._
@@ -62,7 +45,7 @@ _This app is a ticket-buying platform that allows you to select your desired sea
 
 ---
 
-### 4. Airbnb Clone
+### 3. Airbnb Clone
 
 **Description**:  
 _This project is intended to be an Airbnb clone, replicating key features and functionalities, including property listings, user bookings, and reviews, to provide a similar user experience._
@@ -74,6 +57,21 @@ _This project is intended to be an Airbnb clone, replicating key features and fu
 - User review
 
 [Repository](https://github.com/TomasBran/Airbnb-Clone)
+
+---
+
+### 4. Pokemon Portal
+
+**Description**:  
+_Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon._
+
+**Key Features**:
+
+- Several different and fun games
+- Useful tools for Pokémon trainers
+- Login and registration (Coming soon)
+
+[Live Demo](https://portal-pkmn.vercel.app/) | [Repository](https://github.com/TomasBran/Portal-Pokemon-NextJS)
 
 ---
 

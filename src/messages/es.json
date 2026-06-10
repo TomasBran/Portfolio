@@ -1,0 +1,67 @@
+{
+  "home": {
+    "title": "Hola, soy",
+    "name": "Tomas Bran",
+    "subtitle_1": "Fullstack",
+    "subtitle_2": "Desarrollador",
+    "stack": "Stack",
+    "libraries": "Librerías",
+    "hire_me": "Contrátame",
+    "contact": "Contacto",
+    "about_me": "Sobre mí"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "section_1": "¡Hola! Tengo {age} años y vivo en Milán, Italia. Soy apasionado por la programación, los juegos y Pokémon.",
+    "section_2": "Empecé a programar a los 17 años solo por diversión, pero en 2022 comencé a profundizar y estudiarlo más seriamente.",
+    "section_3": "Ahora continúo perfeccionando mis habilidades y afrontando nuevos desafíos. Mi camino en la programación es una aventura en constante evolución, y estoy dedicado a crecer tanto personal como profesionalmente mientras exploro las infinitas posibilidades del mundo tecnológico.",
+    "section_4": "'No hay problema que no pueda resolver', ese es mi lema, y lo mantengo. Puede que falle en el camino, pero eventualmente encontraré la solución. Eso es lo que me convierte en un verdadero maestro.",
+    "section_5": "Te invito a revisar los proyectos en los que he trabajado para conocerme mejor. Cada proyecto refleja mi dedicación y pasión por la programación, y creo que te dará una idea de mis habilidades e intereses. Siéntete libre de explorar y ver cómo ha evolucionado mi camino en la tecnología y la creatividad.",
+    "button": "Mis proyectos"
+  },
+  "projects": {
+    "title": "Mis proyectos",
+    "error": "Error al descargar imágenes",
+    "deploy": "Ver deploy",
+    "repository": "Ver repositorio",
+    "disclaimer": "Aviso:",
+    "items": {
+      "notes": {
+        "title": "Notas App",
+        "description": "Esta es una aplicación de gestión de notas que te permite crear, eliminar y editar notas, asignándoles categorías y etiquetas. Es una herramienta versátil para organizar tus notas de forma eficiente.",
+        "disclaimer": ""
+      },
+      "ticket": {
+        "title": "Ticket Bus",
+        "description": "Esta app es una plataforma de compra de tickets que te permite seleccionar asientos y comprarlos en tiempo real.",
+        "disclaimer": "Este es un proyecto colaborativo con una organización sin fines de lucro."
+      },
+      "airbnb": {
+        "title": "Clon de Airbnb",
+        "description": "Este proyecto es un clon de Airbnb que replica funcionalidades clave como listados de propiedades, reservas de usuarios y reseñas para brindar una experiencia similar.",
+        "disclaimer": "Este es un proyecto colaborativo con una organización sin fines de lucro."
+      },
+      "pokemon": {
+        "title": "Portal Pokémon",
+        "description": "Pokémon Portal es una plataforma donde puedes descubrir juegos y herramientas para divertirte y aprender más sobre Pokémon.",
+        "disclaimer": "Este proyecto no está afiliado a Nintendo. Todos los derechos de Pokémon pertenecen a sus respectivos dueños. Es un proyecto sin fines de lucro. La demo puede no estar actualizada."
+      },
+      "palet": {
+        "title": "Grupo Palet",
+        "description": "Este proyecto fue desarrollado para una fábrica de pallets en Argentina, mostrando productos y servicios disponibles.",
+        "disclaimer": ""
+      }
+    }
+  },
+  "hire_me": {
+    "linked_in": "Perfil de LinkedIn",
+    "click_here": "Haz clic aquí",
+    "email": "Correo"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about_me": "Sobre mí",
+    "projects": "Mis proyectos",
+    "hire_me": "Contáctame"
+  }
+}

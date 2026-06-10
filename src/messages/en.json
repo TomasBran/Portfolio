@@ -1,0 +1,67 @@
+{
+  "home": {
+    "title": "Hello, I'm",
+    "name": "Tomas Bran",
+    "subtitle_1": "Fullstack",
+    "subtitle_2": "Developer",
+    "stack": "Stack",
+    "libraries": "Libraries",
+    "hire_me": "Hire me",
+    "contact": "Contact",
+    "about_me": "About me"
+  },
+  "about": {
+    "title": "About me",
+    "section_1": "Hi! I'm {age} years old and based in Milano, Italy. I'm passionate about programming, gaming, and Pokémon.",
+    "section_2": "I started programming at the age of 17 just for fun, but I began to dive deeper and study it more seriously in 2022.",
+    "section_3": "Now I continue to refine my skills and embrace new challenges with enthusiasm. My journey in programming is an ever-evolving adventure, and I'm dedicated to growing both personally and professionally as I explore the endless possibilities within the tech world.",
+    "section_4": "'There is no puzzle I cannot solve', that's my motto, and I stand by it. I might fail a few times trying, but I'll eventually find the  solution. That's what makes me a true master",
+    "section_5": "I encourage you to check out the projects I've worked on to get to know me a bit better. Each project reflects my dedication and passion for programming, and I believe they'll give you a glimpse into my skills and interests. Feel free to explore and see how my journey in technology and creativity has unfolded.",
+    "button": "My Projects"
+  },
+  "projects": {
+    "title": "My projects",
+    "error": "Error downloading images",
+    "deploy": "View Deploy",
+    "repository": "View Repository",
+    "disclaimer": "Disclaimer:",
+    "items": {
+      "notes": {
+        "title": "Notes App",
+        "description": "This is a note management app that allows you to create, delete, and edit notes while assigning categories and tags to them. It’s a versatile tool for organizing your notes effectively.",
+        "disclaimer": ""
+      },
+      "ticket": {
+        "title": "Ticket Bus",
+        "description": "This app is a ticket-buying platform that allows you to select your desired seats and purchase them in real time.",
+        "disclaimer": "This is a collaborative project with a non-profit organization."
+      },
+      "airbnb": {
+        "title": "Airbnb Clone",
+        "description": "This project is intended to be an Airbnb clone, replicating key features and functionalities, including property listings, user bookings, and reviews, to provide a similar user experience.",
+        "disclaimer": "This is a collaborative project with a non-profit organization."
+      },
+      "pokemon": {
+        "title": "Pokemon Portal",
+        "description": "Pokémon Portal is an engaging platform where you can discover exciting games and useful tools to have fun and learn more about Pokémon.",
+        "disclaimer": "This project is not affiliated with Nintendo. All rights to Pokémon belong to their respective owners. This is a non-profit project. The live demo might not be up to date."
+      },
+      "palet": {
+        "title": "Grupo Palet",
+        "description": "This project was developed for a pallet factory located in Argentina, showcasing both pallets and services for sale.",
+        "disclaimer": ""
+      }
+    }
+  },
+  "hire_me": {
+    "linked_in": "LinkedIn Profile",
+    "click_here": "Click Here",
+    "email": "Email"
+  },
+  "navbar": {
+    "home": "Home",
+    "about_me": "About me",
+    "projects": "My projects",
+    "hire_me": "Hire me"
+  }
+}
