@@ -5,13 +5,22 @@ import { messages } from "../../i18n/config";
 
 export const LocaleContext = createContext(null);
 
-export const LocaleProvider = ({ children }) => {
-  const [locale, setLocale] = useState(() => {
-    if (typeof window === "undefined") return "en";
+const detectLocale = () => {
+  if (typeof window === "undefined") return "en";
 
-    const saved = localStorage.getItem("locale");
-    return saved || "en";
-  });
+  const saved = localStorage.getItem("locale");
+  if (saved) return saved;
+
+  const browserLang = navigator.language.toLowerCase();
+
+  if (browserLang.startsWith("es")) return "es";
+  if (browserLang.startsWith("it")) return "it";
+
+  return "en";
+};
+
+export const LocaleProvider = ({ children }) => {
+  const [locale, setLocale] = useState(() => detectLocale());
 
   const t = (key) => {
     const keys = key.split(".");
