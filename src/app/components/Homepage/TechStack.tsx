@@ -4,6 +4,9 @@ import {
   FaJsSquare,
   FaReact,
   FaNodeJs,
+  FaFigma,
+  FaGithub,
+  FaMobileAlt,
 } from "react-icons/fa";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import {
@@ -16,6 +19,9 @@ import {
   SiMui,
 } from "react-icons/si";
 import { Tooltip } from "antd";
+import { TbApi } from "react-icons/tb";
+import { MdSecurity } from "react-icons/md";
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const techStack = [
   {
@@ -52,7 +58,7 @@ const techStack = [
     icon: <RiNextjsFill className="h-full" />,
     name: "Next.js",
     lightClass: "text-light-next",
-    darkClass: "text-dark-next",
+    darkClass: "text-white",
   },
   {
     icon: <FaNodeJs className="h-full" />,
@@ -70,7 +76,7 @@ const techStack = [
     icon: <SiExpress className="h-full" />,
     name: "Express.js",
     lightClass: "text-light-express",
-    darkClass: "text-dark-express",
+    darkClass: "text-white",
   },
   {
     icon: <SiMongodb className="h-full" />,
@@ -104,6 +110,45 @@ const libraries = [
     name: "Material UI",
     lightClass: "text-light-mui",
     darkClass: "text-dark-mui",
+  },
+];
+
+const tools = [
+  {
+    icon: <FaGithub className="h-full" />,
+    name: "GitHub",
+    lightClass: "text-light-github",
+    darkClass: "text-white",
+  },
+  {
+    icon: <TbApi className="h-full" />,
+    name: "REST APIs",
+    lightClass: "text-light-api",
+    darkClass: "text-dark-api",
+  },
+  {
+    icon: <MdSecurity className="h-full" />,
+    name: "JWT Auth",
+    lightClass: "text-light-jwt",
+    darkClass: "text-dark-jwt",
+  },
+  {
+    icon: <FaMobileAlt className="h-full" />,
+    name: "Responsive Design",
+    lightClass: "text-light-responsive",
+    darkClass: "text-dark-responsive",
+  },
+  {
+    icon: <FaFigma className="h-full" />,
+    name: "Figma",
+    lightClass: "text-light-figma",
+    darkClass: "text-dark-figma",
+  },
+  {
+    icon: <HiOutlineUserGroup className="h-full" />,
+    name: "Agile/Scrum",
+    lightClass: "text-light-scrum",
+    darkClass: "text-dark-scrum",
   },
 ];
 
@@ -146,6 +191,29 @@ export const Libraries = () => {
             color="blue"
           >
             {library.icon}
+          </Tooltip>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export const Tools = () => {
+  return (
+    <div className="flex lg:gap-8 sm:gap-4 justify-around lg:justify-normal sm:justify-center w-full flex-wrap px-1 sm:px-0">
+      {tools.map((tool, index) => (
+        <div
+          key={index}
+          className={`hover:scale-110 transition-all duration-150 ease-linear h-14 ${tool.lightClass} dark:${tool.darkClass}`}
+        >
+          <Tooltip
+            title={tool.name}
+            arrow={false}
+            mouseEnterDelay={0.15}
+            placement="bottom"
+            color="blue"
+          >
+            {tool.icon}
           </Tooltip>
         </div>
       ))}

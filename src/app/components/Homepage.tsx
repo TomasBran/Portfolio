@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import "../styles/homepage.css";
-import { TechStack, Libraries } from "./Homepage/TechStack";
+import { TechStack, Libraries, Tools } from "./Homepage/TechStack";
 import { usePageContext } from "../context/PageContext";
 import { FaArrowDown } from "react-icons/fa";
 import { useLocale } from "../context/LanguageContext";
@@ -55,12 +55,16 @@ const Homepage = () => {
             {t("home.libraries")}
           </span>
           <Libraries />
+          <span className="text-slate-800 dark:text-white mt-6">
+            {t("home.tools")}
+          </span>
+          <Tools />
         </div>
         <div className="xl:px-24 lg:px-12 flex gap-4 lg:gap-14 lg:text-2xl text-lg justify-center items-center lg:justify-start">
           <button
             name={"hire-me"}
             onClick={onButtonClick}
-            className="lg:w-2/6 md:w-1/6 w-5/12 border-2 lg:p-4 p-2 md:rounded-2xl rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:bg-slate-800 dark:text-white dark:border-slate-800 dark:hover:text-slate-800"
+            className="lg:w-2/6 md:w-1/6 w-5/12 border-2 lg:p-4 p-2 md:rounded-2xl rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:bg-slate-800 dark:text-white dark:border-slate-800"
           >
             {t("home.contact")}
           </button>
