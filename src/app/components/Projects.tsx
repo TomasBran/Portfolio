@@ -43,7 +43,7 @@ const Projects = () => {
               className="flex justify-center lg:w-2/6 md:w-full w-1/6 h-full"
             >
               <span
-                className={`cursor-pointer flex justify-center items-center lg:py-4 py-1 md:px-6 text-xs text-center lg:w-4/6 w-full project-shadow lg:rounded-xl lg:border-r-[3px] lg:border-b-[3px] lg:border-t-[1px] lg:border-l-[1px] border-t-slate-400 border-l-slate-400 border-b-cyan-500 border-r-cyan-500 hover:bg-cyan-400 hover:text-white lg:text-base md:text-sm ${
+                className={`transition-all duration-150 cursor-pointer flex justify-center items-center lg:py-4 py-1 md:px-6 text-xs text-center lg:w-4/6 w-full project-shadow lg:rounded-xl lg:border-r-[3px] lg:border-b-[3px] lg:border-t-[1px] lg:border-l-[1px] border-t-slate-400 border-l-slate-400 border-b-cyan-500 border-r-cyan-500 hover:bg-cyan-400 hover:text-white lg:text-base md:text-sm ${
                   project.id === currentProject.id && "bg-cyan-500 text-white"
                 }`}
                 onClick={() => changeProject(index)}
@@ -147,7 +147,7 @@ const Projects = () => {
 
             <div className="flex lg:flex-col gap-2">
               {currentProject.deploy_link !== "" && (
-                <button className="py-2 px-6 rounded-full bg-slate-50 text-black hover:bg-cyan-500 hover:text-white">
+                <button className="py-2 px-6 rounded-full bg-slate-50 text-black hover:bg-cyan-500 hover:text-white transition-all">
                   <a
                     href={currentProject.deploy_link}
                     target="_blank"
@@ -158,7 +158,7 @@ const Projects = () => {
                 </button>
               )}
 
-              <button className="py-2 px-6 rounded-full bg-cyan-400 hover:bg-cyan-500 dark:bg-cyan-600 dark:hover:bg-cyan-500">
+              <button className="py-2 px-6 rounded-full bg-cyan-400 hover:bg-cyan-500 dark:bg-cyan-600 dark:hover:bg-cyan-500 transition-all">
                 <a
                   href={currentProject.github_link}
                   target="_blank"

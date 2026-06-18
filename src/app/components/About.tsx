@@ -70,7 +70,7 @@ const About = () => {
           <button
             name={"projects"}
             onClick={onButtonClick}
-            className="lg:w-3/12 w-2/6 border-2 lg:p-2 p-2 rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 dark:hover:bg-transparent dark:bg-slate-800 dark:text-white dark:border-slate-800"
+            className="lg:w-3/12 w-2/6 border-2 lg:p-2 p-2 rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:text-white dark:hover:bg-transparent hover:bg-cyan-500 dark:bg-slate-800 dark:text-white border-slate-800 hover:border-transparent dark:hover:border-cyan-800"
           >
             {t("about.button")}
           </button>

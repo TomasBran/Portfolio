@@ -6,9 +6,19 @@ import {
   airbnbImages,
 } from "./images";
 
-export const projects = [
+const unorderedProjects = [
   {
-    id: 1,
+    project_name: "Pokemon Portal",
+    titleKey: "projects.items.pokemon.title",
+    descriptionKey: "projects.items.pokemon.description",
+    disclaimerKey: "projects.items.pokemon.disclaimer",
+    images: pkmnImages,
+    github_link: "https://github.com/TomasBran/Portal-Pokemon-NextJS",
+    deploy_link: "https://portal-pkmn.vercel.app/",
+    stack: ["HTML", "CSS", "Javascript", "React", "TailwindCSS", "Next.js"],
+    has_backend: true,
+  },
+  {
     project_name: "Notes App",
     titleKey: "projects.items.notes.title",
     descriptionKey: "projects.items.notes.description",
@@ -29,7 +39,6 @@ export const projects = [
     has_backend: true,
   },
   {
-    id: 2,
     project_name: "Ticket Bus",
     titleKey: "projects.items.ticket.title",
     descriptionKey: "projects.items.ticket.description",
@@ -41,7 +50,6 @@ export const projects = [
     has_backend: false,
   },
   {
-    id: 3,
     project_name: "Airbnb Clone",
     titleKey: "projects.items.airbnb.title",
     descriptionKey: "projects.items.airbnb.description",
@@ -61,19 +69,6 @@ export const projects = [
     has_backend: false,
   },
   {
-    id: 4,
-    project_name: "Pokemon Portal",
-    titleKey: "projects.items.pokemon.title",
-    descriptionKey: "projects.items.pokemon.description",
-    disclaimerKey: "projects.items.pokemon.disclaimer",
-    images: pkmnImages,
-    github_link: "https://github.com/TomasBran/Portal-Pokemon-NextJS",
-    deploy_link: "https://portal-pkmn.vercel.app/",
-    stack: ["HTML", "CSS", "Javascript", "React", "TailwindCSS", "Next.js"],
-    has_backend: true,
-  },
-  {
-    id: 5,
     project_name: "Grupo Palet",
     titleKey: "projects.items.palet.title",
     descriptionKey: "projects.items.palet.description",
@@ -85,3 +80,24 @@ export const projects = [
     has_backend: false,
   },
 ];
+
+const order = [
+  "Pokemon Portal",
+  "Notes App",
+  "Ticket Bus",
+  "Airbnb Clone",
+  "Grupo Palet",
+]; // Cambiar el orden cuando corresponda
+
+const orderMap = Object.fromEntries(order.map((name, index) => [name, index]));
+
+export const projects = [...unorderedProjects]
+  .sort(
+    (a, b) =>
+      (orderMap[a.project_name] ?? Number.MAX_SAFE_INTEGER) -
+      (orderMap[b.project_name] ?? Number.MAX_SAFE_INTEGER),
+  )
+  .map((project, index) => ({
+    ...project,
+    id: index + 1,
+  }));

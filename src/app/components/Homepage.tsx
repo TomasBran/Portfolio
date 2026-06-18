@@ -64,7 +64,7 @@ const Homepage = () => {
           <button
             name={"hire-me"}
             onClick={onButtonClick}
-            className="lg:w-2/6 md:w-1/6 w-5/12 border-2 lg:p-4 p-2 md:rounded-2xl rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:bg-slate-800 dark:text-white dark:border-slate-800"
+            className="lg:w-2/6 md:w-1/6 w-5/12 border-2 lg:p-4 p-2 md:rounded-2xl rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:text-white dark:hover:bg-transparent hover:bg-cyan-500 dark:bg-slate-800 dark:text-white border-slate-800 hover:border-transparent dark:hover:border-cyan-800"
           >
             {t("home.contact")}
           </button>
