@@ -9,7 +9,7 @@ import { useLocale } from "../context/LanguageContext";
 
 const Homepage = () => {
   const { setCurrentSection } = usePageContext();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const onButtonClick = (e: any) => {
     setCurrentSection(e.target.name);
 
@@ -19,7 +19,7 @@ const Homepage = () => {
     }
   };
 
-  const onTextClick = (name) => {
+  const onTextClick = (name: string) => {
     setCurrentSection(name);
 
     const section = document.getElementById(name);
@@ -28,18 +28,23 @@ const Homepage = () => {
     }
   };
 
+  const spanishHomeSubtitleClass = "flex-row-reverse justify-end";
+
   return (
     <div className="h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white flex lg:flex-row flex-col-reverse justify-center sm:gap-0 gap-4 items-center cursor-default w-screen">
       <div className="text-white font-main font-bold xl:text-5xl lg:text-3xl text-2xl xl:w-3/6 lg:4/6 w-full flex flex-col justify-center xl:gap-14 lg:gap-8 gap-2">
         <div className="flex lg:flex-col md:flex-row flex-col md:gap-6 mt-4 lg:mt-0 justify-center items-center w-full">
           <div className="text-slate-800 dark:text-white lg:w-full xl:px-24 lg:px-12 transition duration-500 ease-linear">
             <span>{t("home.title")} </span>
+
             <span className={`underline-animation duration-150 ease-linear`}>
               {t("home.name")}
             </span>
           </div>
           <span className="lg:hidden hidden md:inline">-</span>
-          <div className="text-slate-800 dark:text-white lg:w-full xl:px-24 transition duration-500 ease-linear">
+          <div
+            className={`text-slate-800 dark:text-white lg:w-full xl:px-24 transition duration-500 ease-linear flex gap-3.5 ${locale === "es" ? spanishHomeSubtitleClass : ""}`}
+          >
             <span>{t("home.subtitle_1")} </span>
             <span className={`underline-animation duration-150 ease-linear`}>
               {t("home.subtitle_2")}
