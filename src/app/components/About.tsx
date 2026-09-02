@@ -24,13 +24,36 @@ const About = () => {
       : 0);
 
   return (
-    <div className="h-screen font-main bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white flex flex-col justify-center items-center cursor-default w-screen pt-14">
+    <div className="h-screen font-main bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white flex flex-col justify-center items-center cursor-default w-screen sm:pt-14 pt-6">
       <span
         className={`font-bold md:text-5xl text-3xl flex items-center justify-center h-[8%]`}
       >
         {t("about.title")}
       </span>
-      <div className="w-full lg:px-10 px-2 flex flex-col lg:text-xl md:text-base text-sm text-center h-[88%] gap-6 xl:gap-10">
+
+      {/* Mobile */}
+      <div className="w-full px-3 flex-col text-sm text-center h-full items-center flex gap-6 sm:hidden">
+        <span>{t("about.section_1", { age })}</span>
+
+        <span>{t("about.section_2")}</span>
+
+        <span>{t("about.section_3")}</span>
+
+        <span>{t("about.section_4")}</span>
+
+        <span>{t("about.section_5")}</span>
+
+        <button
+          name={"projects"}
+          onClick={onButtonClick}
+          className="lg:w-3/12 w-2/6 border-2 lg:p-2 p-2 rounded-lg transition-all duration-150 ease-linear active:scale-95 bg-white text-slate-800 hover:text-white dark:hover:bg-transparent hover:bg-cyan-500 dark:bg-slate-800 dark:text-white border-slate-800 hover:border-transparent dark:hover:border-cyan-800"
+        >
+          {t("about.button")}
+        </button>
+      </div>
+
+      {/* Desktop */}
+      <div className="w-full lg:px-10 px-2 flex-col lg:text-xl md:text-base text-sm text-center h-[88%] gap-6 xl:gap-10 hidden sm:flex ">
         <div
           data-aos="fade-right"
           className="flex w-full justify-center items-center max-h-[16vh]"
