@@ -42,13 +42,13 @@ export default function Home() {
     section?.scrollIntoView({ behavior: "smooth" });
   }, [currentSection]);
 
-  // useEffect(() => {
-  //   window.addEventListener("wheel", handleScroll, { passive: false });
+  useEffect(() => {
+    window.addEventListener("wheel", handleScroll, { passive: false });
 
-  //   return () => {
-  //     window.removeEventListener("wheel", handleScroll);
-  //   };
-  // }, [currentSection]);
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, [currentSection]);
 
   return (
     <main>
