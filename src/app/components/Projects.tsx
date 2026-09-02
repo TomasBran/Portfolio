@@ -29,21 +29,19 @@ const Projects = () => {
   };
 
   return (
-    <div className="h-screen px-2 font-main bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white flex flex-col justify-center items-center cursor-default w-screen lg:gap-8 md:gap-4">
+    <div className="sm:h-screen h-fit py-6 px-2 font-main bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white flex flex-col justify-center items-center cursor-default w-screen lg:gap-8 md:gap-4">
       {/* TITLE */}
       <div className="w-full flex flex-col items-center gap-6">
-        <span className="text-5xl lg:inline-block hidden">
-          {t("projects.title")}
-        </span>
+        <span className="sm:text-5xl text-xl">{t("projects.title")}</span>
 
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center gap-4 pb-2 overflow-auto">
           {projects.map((project, index) => (
             <div
               key={project.id}
               className="flex justify-center lg:w-2/6 md:w-full w-1/6 h-full"
             >
               <span
-                className={`transition-all duration-150 cursor-pointer flex justify-center items-center lg:py-4 py-1 md:px-6 text-xs text-center lg:w-4/6 w-full project-shadow lg:rounded-xl lg:border-r-[3px] lg:border-b-[3px] lg:border-t-[1px] lg:border-l-[1px] border-t-slate-400 border-l-slate-400 border-b-cyan-500 border-r-cyan-500 hover:bg-cyan-400 hover:text-white lg:text-base md:text-sm ${
+                className={`transition-all duration-150 cursor-pointer flex justify-center items-center lg:py-4 py-1 px-4 md:px-6 text-xs text-center lg:w-4/6 w-full project-shadow rounded lg:rounded-xl lg:border-r-[3px] lg:border-b-[3px] lg:border-t-[1px] lg:border-l-[1px] border-t-slate-400 border-l-slate-400 border-b-cyan-500 border-r-cyan-500 hover:bg-cyan-400 hover:text-white lg:text-base md:text-sm ${
                   project.id === currentProject.id && "bg-cyan-500 text-white"
                 }`}
                 onClick={() => changeProject(index)}
@@ -107,10 +105,10 @@ const Projects = () => {
         </div>
 
         {/* INFO */}
-        <div className="lg:w-4/12 flex items-center flex-col">
-          <div className="flex lg:flex-col flex-col sm:flex-row gap-2 items-center">
+        <div className="lg:w-4/12 flex items-center flex-col sm:gap-0 gap-4">
+          <div className="flex lg:flex-col flex-col sm:flex-row sm:gap-2 items-center gap-4">
             <div className="flex flex-col items-center">
-              <span className="lg:text-4xl font-bold text-xl">
+              <span className="lg:text-4xl font-bold text-xl sm:pt-0 pt-2">
                 {t(currentProject.titleKey)}
               </span>
             </div>
