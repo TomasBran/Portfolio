@@ -52,19 +52,19 @@ export default function Home() {
 
   return (
     <main>
-      <section id="home" className="sm:h-screen h-fit">
+      <section id="home" className="h-screen">
         <Homepage />
       </section>
-      <div className="sm:h-[100px] h-14" />
-      <section id="about" className="sm:h-screen h-fit">
+      <div className="h-[100px]" />
+      <section id="about" className="h-screen">
         <About />
       </section>
-      <div className="sm:h-[100px] h-14" />
-      <section id="projects" className="sm:h-screen h-fit">
+      <div className="h-[100px]" />
+      <section id="projects" className="h-screen">
         <Projects />
       </section>
-      <div className="sm:h-[100px] h-14" />
-      <section id="hire-me" className="sm:h-screen h-fit">
+      <div className="h-[100px]" />
+      <section id="hire-me" className="h-screen">
         <HireMe />
       </section>
       <BackToTopButton />
